@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <!--Custom stylesheet-->
-
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}" type="text/css">
 
     <!--Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
     <!--Custom physical style-->
 
@@ -23,12 +24,14 @@
   <body class='bg-light'>
     <!--navbar-->
     {% include 'includes/navbar.html' %}
-    
+
     <!--Body block-->
     {% block body %}
 
     {% endblock %}
 
+    <!--Footer-->
+    {% include 'includes/footer.html' %}
     <!--Bootstrap and JQuery-->
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
