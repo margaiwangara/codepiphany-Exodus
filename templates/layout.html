@@ -11,17 +11,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <!--Custom stylesheet-->
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/agency.min.css') }}">
 
     <!--Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!--Custom physical style-->
 
   </head>
-  <body class='bg-light'>
+  <body id="page-top">
     <!--navbar-->
     {% include 'includes/navbar.html' %}
 
@@ -41,6 +46,16 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ url_for('static',filename='scripts/jquery.easing.min.js') }}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{ url_for('static',filename='scripts/jqBootstrapValidation.js') }}js/"></script>
+    <script src="{{ url_for('static',filename='scripts/contact_me.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static',filename='scripts/agency.min.js') }}"></script>
 
   </body>
 </html>
